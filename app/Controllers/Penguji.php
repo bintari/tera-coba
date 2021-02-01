@@ -57,23 +57,23 @@ class Penguji extends Controller
         $orang = $this->TeraModel->where(['tera_id' => $tera_id])->first();
         $data = [
             'tera' =>  $orang,
-            'validation'=>$validation
+            'validation' => $validation
         ];
-        return view('pengujian/pengujian', $data);
+        return view('pengujian/pengujiandua', $data);
     }
-    
+
     public function skrdlb()
     {
         return view('retribusi/tambah');
     }
-    
+
     public function save($tera_id)
     {
         $orang = $this->TeraModel->where(['tera_id' => $tera_id])->first();
         $nama = $this->request->getVar();
-                // dd($tera_id);
+        // dd($tera_id);
         $date = strtotime("+7 day");
-        $tera= $tera_id;
+        $tera = $tera_id;
 
         // if (!$this->validate([
         //     'nama' => [
@@ -83,7 +83,7 @@ class Penguji extends Controller
         //             'isuniquie' => '{field} sudah ada',
         //         ]
         //     ],
-            
+
         // ])) {
         //     $validation = \Config\Services::validation();
         //     return redirect('penguji/pengujian/'.$tera_id)->withInput()->with('validation', $validation);
@@ -120,7 +120,7 @@ class Penguji extends Controller
             'kepekaan_index_muka' => $nama['kepekaan_index_muka'],
             'kepekaan_index_belakang' => $nama['kepekaan_index_belakang'],
             'ruang_kosong_tum_muka' => $nama['ruang_kosong_tum_muka'],
-            'ruang_kosong_tum_belakang'=> $nama['ruang_kosong_tum_belakang'],
+            'ruang_kosong_tum_belakang' => $nama['ruang_kosong_tum_belakang'],
             'diameter_pipa_penyerap' => $nama['diameter_pipa_penyerap'],
             'panjang_pipa_penyerapan_muka' => $nama['panjang_pipa_penyerapan_muka'],
             'panjang_pipa_penyerapan_belakang' => $nama['panjang_pipa_penyerapan_belakang']

@@ -59,6 +59,13 @@ $routes->group('adminpenguji', function ($routes) {
 	$routes->add('jadwal/num', 'Adminpengujian::penguji$1');
 	$routes->add('jadwal/save/(:num)', 'Adminpenguji::save/$1');
 });
+$routes->group('user', function ($routes) {
+	$routes->add('/', 'User::index');
+	$routes->add('login', 'User::login');
+	$routes->add('dashboard', 'User::dashboard');
+	$routes->add('retribusi', 'User::retribusi');
+	$routes->add('pengujian', 'User::pengujian');
+});
 // $routes->add('text', 'Text::index');
 
 /**

@@ -48,9 +48,9 @@
                             <input type="text" class="form-control" id="no_rekening" name="no_rekening" placeholder="">
                         </div>
                     </div>
-                    
 
-                    
+
+
                     <div class="table-responsive">
                         <table class="table table-stripped table-hover">
                             <thead>
@@ -74,4 +74,5 @@
             </div>
         </div>
     </div>
-    <?= $this->endSection(); ?>
+</div>
+<?= $this->endSection(); ?>
