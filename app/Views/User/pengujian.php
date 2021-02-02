@@ -1,4 +1,4 @@
-<?= $this->extend('user/header'); ?>
+<?= $this->extend('user/template'); ?>
 
 <?= $this->section('content') ?>
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
@@ -59,148 +59,170 @@
 
 
                         <div class="entry-content">
+
                             <h5>Pilih berdasarkan nama serta tanggal pendaftaran tera dan tera ulang</h5>
-                            <div> Agus Pamuji</div>
-                            <div>1 Januari 2021</div>
-                            <button id="show"  class="get-started-btn scrollto">lihat selengkapnya</button>
-                            <div class="tb1" style="display: none;">
-                                <div class="table-responsive">
-                                    <table class="table table-stripped table-hover">
-                                        <thead>
-                                            <th>NO</th>
-                                            <th>Tanggal Pengujian</th>
-                                            <th>Jenis UTTP</th>
-                                            <th>Kapasitas / Daya Baca</th>
-                                            <th>Status</th>
-                                        </thead>
-                                        <tbody class="tbody-jenis_uttps">
-                                            <tr>
-                                                <td scope="row">1</td>
-                                                <td scope="row">01/02/2021</td>
-                                                <td scope="row">Timbangan</td>
-                                                <td scope="row">1000 Kg</td>
-                                                <td scope="row">Sah</td>
-
-                                            </tr>
-                                            <tr>
-                                                <td scope="row">2</td>
-                                                <td scope="row">01/02/2021</td>
-                                                <td scope="row">Timbangan</td>
-                                                <td scope="row">1000 Kg</td>
-                                                <td scope="row">Sah</td>
-
-                                            </tr>
-                                            <tr>
-                                                <td scope="row">3</td>
-                                                <td scope="row">01/02/2021</td>
-                                                <td scope="row">Timbangan</td>
-                                                <td scope="row">1000 Kg</td>
-                                                <td scope="row">Sah</td>
-
-                                            </tr>
-                                            <tr>
-                                                <td scope="row">4</td>
-                                                <td scope="row">01/02/2021</td>
-                                                <td scope="row">Timbangan</td>
-                                                <td scope="row">1000 Kg</td>
-                                                <td scope="row">Sah</td>
-
-                                            </tr>
-                                            <tr>
-                                                <td scope="row">5</td>
-                                                <td scope="row">01/02/2021</td>
-                                                <td scope="row">Timbangan</td>
-                                                <td scope="row">100 Kg</td>
-                                                <td scope="row">Reparasi</td>
-
-                                            </tr>
-                                            <tr>
-                                                <td scope="row">6 </td>
-                                                <td scope="row">01/02/2021</td>
-                                                <td scope="row">Timbangan</td>
-                                                <td scope="row">100 Kg</td>
-                                                <td scope="row">Ditolak</td>
-
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                            <div class="col card mb-3">
+                                <div class="col mt-2"> Agus Pamuji</div>
+                                <div class="col row">
+                                    <div class="col">
+                                        1 Januari 2021</div>
+                                    <button id="show" class="get-started-btn scrollto mb-3">lihat selengkapnya</button>
                                 </div>
-                            </div>
-                            <div>Agus Pamuji</div>
-                            <div>1 Oktober 2019</div>
-                            <button id="show2"  class="get-started-btn scrollto">lihat selengkapnya</button>
-                            <div class="tb2" style="display: none;">
-                                <div class="table-responsive">
-                                    <table class="table table-stripped table-hover">
-                                        <thead>
-                                            <th>NO</th>
-                                            <th>Tanggal Pengujian</th>
-                                            <th>Jenis UTTP</th>
-                                            <th>Kapasitas / Daya Baca</th>
-                                            <th>Status</th>
-                                        </thead>
-                                        <tbody class="tbody-jenis_uttps">
-                                            <tr>
-                                                <td scope="row">1</td>
-                                                <td scope="row">01/02/2021</td>
-                                                <td scope="row">Timbangan</td>
-                                                <td scope="row">1000 Kg</td>
-                                                <td scope="row">Sah</td>
+                                <div class="tb1" style="display: none;">
+                                    <div class="table-responsive">
+                                        <table class="table table-stripped table-hover">
+                                            <thead>
+                                                <th>NO</th>
+                                                <th>Tanggal Pengujian</th>
+                                                <th>Jenis UTTP</th>
+                                                <th>Kapasitas / Daya Baca</th>
+                                                <th>Status</th>
+                                            </thead>
+                                            <tbody class="tbody-jenis_uttps">
+                                                <tr>
+                                                    <td scope="row">1</td>
+                                                    <td scope="row">01/02/2021</td>
+                                                    <td scope="row">Timbangan</td>
+                                                    <td scope="row">1000 Kg</td>
+                                                    <td scope="row">Sah</td>
 
-                                            </tr>
-                                            <tr>
-                                                <td scope="row">2</td>
-                                                <td scope="row">01/02/2021</td>
-                                                <td scope="row">Timbangan</td>
-                                                <td scope="row">1000 Kg</td>
-                                                <td scope="row">Sah</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">2</td>
+                                                    <td scope="row">01/02/2021</td>
+                                                    <td scope="row">Timbangan</td>
+                                                    <td scope="row">1000 Kg</td>
+                                                    <td scope="row">Sah</td>
 
-                                            </tr>
-                                            <tr>
-                                                <td scope="row">3</td>
-                                                <td scope="row">01/02/2021</td>
-                                                <td scope="row">Timbangan</td>
-                                                <td scope="row">1000 Kg</td>
-                                                <td scope="row">Sah</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">3</td>
+                                                    <td scope="row">01/02/2021</td>
+                                                    <td scope="row">Timbangan</td>
+                                                    <td scope="row">1000 Kg</td>
+                                                    <td scope="row">Sah</td>
 
-                                            </tr>
-                                            <tr>
-                                                <td scope="row">4</td>
-                                                <td scope="row">01/02/2021</td>
-                                                <td scope="row">Timbangan</td>
-                                                <td scope="row">1000 Kg</td>
-                                                <td scope="row">Sah</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">4</td>
+                                                    <td scope="row">01/02/2021</td>
+                                                    <td scope="row">Timbangan</td>
+                                                    <td scope="row">1000 Kg</td>
+                                                    <td scope="row">Sah</td>
 
-                                            </tr>
-                                            <tr>
-                                                <td scope="row">5</td>
-                                                <td scope="row">01/02/2021</td>
-                                                <td scope="row">Timbangan</td>
-                                                <td scope="row">100 Kg</td>
-                                                <td scope="row">Reparasi</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">5</td>
+                                                    <td scope="row">01/02/2021</td>
+                                                    <td scope="row">Timbangan</td>
+                                                    <td scope="row">100 Kg</td>
+                                                    <td scope="row">Reparasi</td>
 
-                                            </tr>
-                                            <tr>
-                                                <td scope="row">6 </td>
-                                                <td scope="row">01/02/2021</td>
-                                                <td scope="row">Timbangan</td>
-                                                <td scope="row">100 Kg</td>
-                                                <td scope="row">Ditolak</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">6 </td>
+                                                    <td scope="row">01/02/2021</td>
+                                                    <td scope="row">Timbangan</td>
+                                                    <td scope="row">100 Kg</td>
+                                                    <td scope="row">Ditolak</td>
 
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div>
+                                            <i>Catatan: </i>
+                                        </div>
+                                        <div>
+                                            <i>
+                                                Proses reparasi perbaikan ulang terhitung 7 hari sejak penetapan hasil pengujian melebihi batas waktu maka akan dikenai denda sesuai aturan yang berlaku
+                                            </i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div>
-                                <i>Catatan: </i>
+                            <div class="col card mb-3">
+                                <div class="col mt-2"> Agus Pamuji</div>
+                                <div class="col row">
+                                    <div class="col">
+                                        1 Januari 2021</div>
+                                    <button id="show2" class="get-started-btn scrollto mb-3">lihat selengkapnya</button>
+                                </div>
+                                <div class="tb2" style="display: none;">
+                                    <div class="table-responsive">
+                                        <table class="table table-stripped table-hover">
+                                            <thead>
+                                                <th>NO</th>
+                                                <th>Tanggal Pengujian</th>
+                                                <th>Jenis UTTP</th>
+                                                <th>Kapasitas / Daya Baca</th>
+                                                <th>Status</th>
+                                            </thead>
+                                            <tbody class="tbody-jenis_uttps">
+                                                <tr>
+                                                    <td scope="row">1</td>
+                                                    <td scope="row">01/02/2021</td>
+                                                    <td scope="row">Timbangan</td>
+                                                    <td scope="row">1000 Kg</td>
+                                                    <td scope="row">Sah</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">2</td>
+                                                    <td scope="row">01/02/2021</td>
+                                                    <td scope="row">Timbangan</td>
+                                                    <td scope="row">1000 Kg</td>
+                                                    <td scope="row">Sah</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">3</td>
+                                                    <td scope="row">01/02/2021</td>
+                                                    <td scope="row">Timbangan</td>
+                                                    <td scope="row">1000 Kg</td>
+                                                    <td scope="row">Sah</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">4</td>
+                                                    <td scope="row">01/02/2021</td>
+                                                    <td scope="row">Timbangan</td>
+                                                    <td scope="row">1000 Kg</td>
+                                                    <td scope="row">Sah</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">5</td>
+                                                    <td scope="row">01/02/2021</td>
+                                                    <td scope="row">Timbangan</td>
+                                                    <td scope="row">100 Kg</td>
+                                                    <td scope="row">Reparasi</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">6 </td>
+                                                    <td scope="row">01/02/2021</td>
+                                                    <td scope="row">Timbangan</td>
+                                                    <td scope="row">100 Kg</td>
+                                                    <td scope="row">Ditolak</td>
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div>
+                                        <i>Catatan: </i>
+                                    </div>
+                                    <div>
+                                        <i>
+                                            Proses reparasi perbaikan ulang terhitung 7 hari sejak penetapan hasil pengujian melebihi batas waktu maka akan dikenai denda sesuai aturan yang berlaku
+                                        </i>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <i>
-                                    Proses reparasi perbaikan ulang terhitung 7 hari sejak penetapan hasil pengujian melebihi batas waktu maka akan dikenai denda sesuai aturan yang berlaku
-                                </i>
-                            </div>
+
+
+
                         </div>
 
                     </div>

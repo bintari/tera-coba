@@ -34,4 +34,12 @@ class User extends Controller
     {
         return view('user/pengujian');
     }
+    public function pengajuan()
+    {
+        return view('user/pengajuan');
+    }
+    public function profil()
+    {
+        return view('user/profil');
+    }
 }

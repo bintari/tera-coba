@@ -65,6 +65,8 @@ $routes->group('user', function ($routes) {
 	$routes->add('dashboard', 'User::dashboard');
 	$routes->add('retribusi', 'User::retribusi');
 	$routes->add('pengujian', 'User::pengujian');
+	$routes->add('pengajuan', 'User::pengajuan');
+	$routes->add('profil', 'User::profil');
 });
 // $routes->add('text', 'Text::index');
 

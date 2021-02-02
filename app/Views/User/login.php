@@ -18,7 +18,8 @@
 
                 </div>
                 <div class="text-center">
-                    <button class="get-started-btn scrollto py-3 px-5 button-submit" h type="submit">Login</button></div>
+                    <a href=""></a>
+                    <a class="get-started-btn scrollto py-3 px-5 button-submit"  href="<?= base_url('user/dashboard') ?>"type="submit">Login</a></div>
                 
             </form>
         </div>
