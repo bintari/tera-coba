@@ -3,36 +3,6 @@
 <?= $this->section('content') ?>
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
-<header id="header" class="fixed-top">
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-xl-10 d-flex align-items-center">
-                <h1 class="logo mr-auto"><a href="index.html">Tera / Tera Ulang<span>.</span></a></h1>
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
-
-                <nav class="nav-menu d-none d-lg-block">
-                    <ul>
-
-
-                        <li><a href="<?= base_url('user/dashboard') ?>">Home</a></li>
-                        <li><a href="#blog">Profil</a></li>
-                        <li><a href="<?= base_url('user/dashboard') ?>">Pendaftaran</a></li>
-
-                        <li><a href="<?= base_url('user/retribusi') ?>">Retribusi</a></li>
-                        <li class="active"><a href="#pengujian">Pengujian</a></li>
-                        <li><a href="">Pengajuan</a></li>
-
-
-                    </ul>
-                </nav><!-- .nav-menu -->
-
-                <a href="#about" class="get-started-btn scrollto">Keluar</a>
-            </div>
-        </div>
-
-    </div>
-</header><!-- End Header -->
 
 <section id="" class=" ">
 
@@ -77,6 +47,7 @@
                                                 <th>Jenis UTTP</th>
                                                 <th>Kapasitas / Daya Baca</th>
                                                 <th>Status</th>
+                                                <th>Aksi</th>
                                             </thead>
                                             <tbody class="tbody-jenis_uttps">
                                                 <tr>
@@ -85,7 +56,9 @@
                                                     <td scope="row">Timbangan</td>
                                                     <td scope="row">1000 Kg</td>
                                                     <td scope="row">Sah</td>
-
+                                                    <td>
+                                                        <button id="detail" class="get-started-btn scrollto">detail</button>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td scope="row">2</td>
@@ -93,6 +66,9 @@
                                                     <td scope="row">Timbangan</td>
                                                     <td scope="row">1000 Kg</td>
                                                     <td scope="row">Sah</td>
+                                                    <td>
+                                                        <button id="detail" class="get-started-btn scrollto">detail</button>
+                                                    </td>
 
                                                 </tr>
                                                 <tr>
@@ -101,7 +77,9 @@
                                                     <td scope="row">Timbangan</td>
                                                     <td scope="row">1000 Kg</td>
                                                     <td scope="row">Sah</td>
-
+                                                    <td>
+                                                        <button id="detail" class="get-started-btn scrollto">detail</button>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td scope="row">4</td>
@@ -109,7 +87,9 @@
                                                     <td scope="row">Timbangan</td>
                                                     <td scope="row">1000 Kg</td>
                                                     <td scope="row">Sah</td>
-
+                                                    <td>
+                                                        <button id="detail" class="get-started-btn scrollto">detail</button>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td scope="row">5</td>
@@ -117,7 +97,9 @@
                                                     <td scope="row">Timbangan</td>
                                                     <td scope="row">100 Kg</td>
                                                     <td scope="row">Reparasi</td>
-
+                                                    <td>
+                                                        <button id="detail" class="get-started-btn scrollto">detail</button>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td scope="row">6 </td>
@@ -125,10 +107,37 @@
                                                     <td scope="row">Timbangan</td>
                                                     <td scope="row">100 Kg</td>
                                                     <td scope="row">Ditolak</td>
-
+                                                    <td>
+                                                        <button id="detail" class="get-started-btn scrollto">detail</button>
+                                                    </td>
                                                 </tr>
                                             </tbody>
+
                                         </table>
+                                        <div class="detail card" style="display:none">
+                                            <h3 class="col  m-3">Detail pengajuan keringanan</h3>
+                                            <div class="col mt-2 mb-2">
+                                                <div class="col row ">
+                                                    <div class="col-3">NO</div>
+                                                    <div class="col-9">: 1</div>
+                                                </div>
+                                                <div class="col row  ">
+                                                    <div class="col-3">Tanggal Pengajuan</div>
+                                                    <div class="col-9">: 1/2/2021</div>
+                                                </div>
+
+                                                <div class="col row  ">
+                                                    <div class="col-3">Status</div>
+                                                    <div class="col-9">: sah</div>
+                                                </div>
+                                                <div class="col row  ">
+                                                    <div class="col-3">Keterangan</div>
+                                                    <div class="col-9">: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus cumque aperiam expedita suscipit in. Sint eum harum ipsam impedit nisi! Iure in voluptate consequuntur minus cupiditate blanditiis optio explicabo ea.</div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
                                         <div>
                                             <i>Catatan: </i>
                                         </div>
@@ -239,6 +248,9 @@
                     });
                     $('#show2').click(function() {
                         $('.tb2').toggle("slide");
+                    });
+                    $('#detail').click(function() {
+                        $('.detail').toggle("slide");
                     });
                 });
             </script>

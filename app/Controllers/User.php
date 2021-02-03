@@ -14,7 +14,10 @@ class User extends Controller
 
     public function index()
     {
-        return view('user/index');
+        $data=[
+            'entry'=>'active'
+        ];
+        return view('user/index',$data);
     }
     public function login()
     {

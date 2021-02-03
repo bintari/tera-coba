@@ -3,33 +3,6 @@
 <?= $this->section('content') ?>
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
-<header id="header" class="fixed-top">
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-xl-10 d-flex align-items-center">
-                <h1 class="logo mr-auto"><a href="index.html">Tera / Tera Ulang<span>.</span></a></h1>
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
-
-                <nav class="nav-menu d-none d-lg-block">
-                    <ul>
-                        <li><a href="<?= base_url('user/dashboard') ?>">Home</a></li>
-                        <li><a href="#blog">Profil</a></li>
-                        <li><a href="<?= base_url('user/dashboard') ?>">Pendaftaran</a></li>
-
-                        <li class="active"><a href="#retribusi">Retribusi</a></li>
-                        <li><a href="<?= base_url('user/pengujian') ?>">Pengujian</a></li>
-                        <li><a href="">Pengajuan</a></li>
-
-                    </ul>
-                </nav><!-- .nav-menu -->
-
-                <a href="" class="get-started-btn scrollto">Keluar</a>
-            </div>
-        </div>
-
-    </div>
-</header><!-- End Header -->
 
 <section id="" class=" ">
     <main id="main">
